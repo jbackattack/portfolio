@@ -1,4 +1,4 @@
-// Replays the "check run" in the home page hero. Without JavaScript, or with
+// Replays the "What I've delivered" panel in the home page hero. Without JavaScript, or with
 // reduced motion, the panel stays in its finished, approved state.
 (() => {
   const panel = document.querySelector("[data-run]");
@@ -9,7 +9,7 @@
   const replay = panel.querySelector("[data-run-replay]");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const total = rows.length;
-  const labels = { queued: "Queued", running: "Running", passed: "Passed" };
+  const labels = { queued: "Waiting", running: "In progress", passed: "Done" };
   let timers = [];
 
   const setState = (row, state) => {
@@ -19,7 +19,7 @@
 
   const showFinished = () => {
     rows.forEach((row) => setState(row, "passed"));
-    summary.textContent = `${total} of ${total} checks passed`;
+    summary.textContent = `${total} of ${total} done`;
     panel.classList.add("is-approved");
   };
 
@@ -28,7 +28,7 @@
     timers = [];
     panel.classList.remove("is-approved");
     rows.forEach((row) => setState(row, "queued"));
-    summary.textContent = `0 of ${total} checks passed`;
+    summary.textContent = `0 of ${total} done`;
     replay.disabled = true;
 
     let t = 500;
@@ -38,7 +38,7 @@
       timers.push(
         setTimeout(() => {
           setState(row, "passed");
-          summary.textContent = `${i + 1} of ${total} checks passed`;
+          summary.textContent = `${i + 1} of ${total} done`;
         }, t)
       );
       t += 150;
