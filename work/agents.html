@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI test agents case study | Jeremy</title>
+<meta name="description" content="Three live AI agents my team built for QA, and Spark, the prototype that came first, where QA is the risk assessor and approval gate.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&amp;display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="brand" href="/">Jeremy<span class="brand__dot">.</span></a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="/work" aria-current="page">Work</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero wrap">
+    <h1 class="page-title">AI test agents</h1>
+    <p class="lede">Three live QA agents my team built on the company's shared agent framework, and Spark, the prototype that came first.</p>
+    <dl class="facts">
+      <dt>Role</dt><dd>Designed Spark; my team built the live agents</dd>
+      <dt>Stack</dt><dd>Appium, Java, TestNG, Bitrise, LambdaTest, GitHub Copilot</dd>
+      <dt>Status</dt><dd>Three agents live; Spark was a prototype</dd>
+    </dl>
+  </section>
+
+  <section class="section wrap" aria-labelledby="live">
+    <div class="split">
+      <h2 id="live">What shipped</h2>
+      <div class="prose">
+        <p>The infrastructure team built a shared agent framework (UDF), so everyone in tech makes agents the same way in one shared workspace. My team built three agents on it:</p>
+        <ul>
+          <li><strong>Test case creator.</strong> Drafts test cases.</li>
+          <li><strong>Test case analyzer.</strong> Reviews test cases.</li>
+          <li><strong>Mobile data lookup.</strong> Looks up mobile app data for the team.</li>
+        </ul>
+        <p><span class="todo">Add one sentence on what each agent does today, who uses them, and any results (time saved, tests produced).</span></p>
+      </div>
+    </div>
+
+    <div class="split">
+      <h2 id="why">Why Spark didn't ship</h2>
+      <div class="prose">
+        <p>Spark was a prototype, designed while the shared framework was still being built. Once the framework existed, it made more sense to build on it than to ship a separate system, so Spark never went to production. <span class="todo">Add what carried over from Spark into the live agents.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="spark">
+    <div class="section__head">
+      <h2 id="spark">Where it started: Spark</h2>
+    </div>
+
+    <div class="split">
+      <h2 id="problem">The problem</h2>
+      <div class="prose">
+        <p>My team was checking mobile cards by hand. That doesn't keep up with an app on two platforms, so we moved toward nightly smoke suites and AI-generated tests.</p>
+        <p>AI can write a lot of tests quickly. The risk is a pile of tests nobody trusts. Spark was built around one rule: a person with risk judgment decides what gets generated and what gets approved.</p>
+      </div>
+    </div>
+
+    <div class="split">
+      <h2 id="how">How it works</h2>
+      <div>
+        <ol class="flow">
+          <li class="flow__step">
+            <span class="flow__name">Trigger</span>
+            <p>One of three modes starts a run.</p>
+          </li>
+          <li class="flow__step">
+            <span class="flow__name">Assess risk</span>
+            <p>QA rates how much a change could hurt.</p>
+          </li>
+          <li class="flow__step">
+            <span class="flow__name">Generate</span>
+            <p>AI drafts tests, with limits set by the risk.</p>
+          </li>
+          <li class="flow__step flow__step--gate">
+            <span class="flow__name">Approve</span>
+            <p>QA approves the tests or sends them back.</p>
+          </li>
+          <li class="flow__step">
+            <span class="flow__name">Run</span>
+            <p>Appium suites run on Bitrise against LambdaTest devices.</p>
+          </li>
+        </ol>
+        <p class="figcap">A simplified view of the framework. <span class="todo">Confirm the step order before publishing.</span></p>
+      </div>
+    </div>
+
+    <div class="split">
+      <h2 id="decisions">Design decisions</h2>
+      <div class="prose">
+        <ul>
+          <li><strong>QA is the approval gate.</strong> AI proposes and QA decides, so the team trusts what runs.</li>
+          <li><strong>Generation limits follow risk.</strong> Effort goes where a failure would cost the most, instead of generating tests everywhere.</li>
+          <li><strong>A single delivery lane.</strong> One path from change to release keeps ownership clear.</li>
+          <li><strong>Three trigger modes.</strong> Different situations start a run in different ways, without separate processes.</li>
+          <li><strong>GitHub Copilot as the model.</strong> It's the LLM my company has approved, so the design works inside existing rules.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="split">
+      <h2 id="delivery">What I delivered</h2>
+      <div class="prose">
+        <ul>
+          <li>A 13-file agent framework, fully specified.</li>
+          <li>A Jira epic with eight to nine child stories, ready for engineering to pick up.</li>
+          <li>A comparison of two ways to run the agent: a Bitrise step and a GitHub Copilot extension in IntelliJ.</li>
+          <li>Onboarding documentation for a Test Quality Agent that runs in IntelliJ through Copilot Chat.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <p><a href="/work">Back to all work</a></p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap bar">
+    <a class="brand" href="/">Jeremy<span class="brand__dot">.</span></a>
+    <nav aria-label="Footer">
+      <ul class="nav">
+        <li><a href="/work">Work</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="https://github.com/jbackattack">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap"><p class="site-foot__note">&copy; 2026 Jeremy. Built by hand with Claude. Hosted on Vercel.</p></div>
+</footer>
+</body>
+</html>
