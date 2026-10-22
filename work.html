@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work | Jeremy</title>
+<meta name="description" content="Selected projects in AI-assisted test generation, mobile test automation, and web design.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&amp;display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap site-head__row">
+    <a class="brand" href="/">Jeremy</a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="/work" aria-current="page">Work</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero wrap">
+    <h1 class="page-title">Work</h1>
+    <p class="lede">Test strategy, AI tooling, and a few things I built for fun and for my community.</p>
+  </section>
+
+  <section class="section wrap" aria-label="Projects">
+    <article class="work-row" id="spark">
+      <h2 class="work-row__title"><a href="/work/spark">Spark: AI-assisted mobile test generation</a></h2>
+      <div class="work-row__body">
+        <p>A 13-file agent framework where AI drafts mobile tests and QA acts as the risk assessor and approval gate. It uses a single delivery lane, test generation limits that follow risk, and three ways to trigger a run.</p>
+        <p>I designed the whole framework, structured the Jira epic (eight to nine child stories), and handed it to an iOS engineering manager to build.</p>
+        <dl class="facts">
+          <dt>Role</dt><dd>Designed the framework and the delivery plan</dd>
+          <dt>Stack</dt><dd>Appium, Java, TestNG, Bitrise, LambdaTest, GitHub Copilot</dd>
+          <dt>Status</dt><dd>Designed and handed off for implementation</dd>
+        </dl>
+        <p><a href="/work/spark">Read the case study</a></p>
+      </div>
+    </article>
+
+    <article class="work-row" id="react-native-ids">
+      <h2 class="work-row__title">One element-ID standard for React Native</h2>
+      <div class="work-row__body">
+        <p>Mobile tests break when elements can't be found. I defined one rule for the React Native app: every element gets accessible, a testID, and an accessibility ID, and tests locate elements with Appium's accessibility ID strategy. The same locator then works on iOS and Android.</p>
+        <dl class="facts">
+          <dt>Role</dt><dd>Defined the standard</dd>
+          <dt>Stack</dt><dd>React Native, Appium, Java</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="work-row" id="nightly-smoke">
+      <h2 class="work-row__title">Nightly smoke suites and a device benchmark</h2>
+      <div class="work-row__body">
+        <p>I changed the team's QA strategy from manual card testing to nightly smoke suites plus AI-generated test creation. I also planned a benchmark pilot to compare simulators and emulators against LambdaTest real devices for the nightly runs.</p>
+        <dl class="facts">
+          <dt>Role</dt><dd>Strategy and pilot plan</dd>
+          <dt>Stack</dt><dd>Appium, TestNG, LambdaTest, Bitrise</dd>
+          <dt>Status</dt><dd>Strategy set, benchmark pilot planned</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="work-row" id="agent-onboarding">
+      <h2 class="work-row__title">Onboarding for AI testing agents</h2>
+      <div class="work-row__body">
+        <p>I wrote the guides engineers need to adopt AI testing agents: a Test Quality Agent that runs in IntelliJ through GitHub Copilot Chat, and a Playwright end-to-end agent for BuzzFeed's rig UI services. I also compared the IntelliJ approach with a Bitrise step for the same job.</p>
+        <dl class="facts">
+          <dt>Role</dt><dd>Author of the onboarding documentation</dd>
+          <dt>Stack</dt><dd>GitHub Copilot, IntelliJ, Playwright</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="work-row" id="wreath-site">
+      <h2 class="work-row__title">Pack 55 wreath fundraiser site</h2>
+      <div class="work-row__body">
+        <p>A fundraising site for Pack 55's wreath sale, including door-to-door sales status. I designed and built it with Claude as plain HTML, CSS, and JavaScript, with security headers configured in Vercel and automatic deploys from GitHub.</p>
+        <dl class="facts">
+          <dt>Role</dt><dd>Designed and built it</dd>
+          <dt>Stack</dt><dd>HTML, CSS, JavaScript, Vercel, GitHub</dd>
+          <dt>Link</dt><dd><span class="todo">Add a public URL (the Vercel preview URL asks visitors to log in)</span></dd>
+        </dl>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap site-foot__row">
+    <p>Built by hand with Claude. Hosted on Vercel.</p>
+    <ul>
+      <li><a href="https://github.com/jbackattack">GitHub</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jeremy | Quality engineering leader</title>
+<meta name="description" content="QA leader for mobile apps. I design the systems that test them, including AI that drafts tests while people decide what ships.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&amp;display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap site-head__row">
+    <a class="brand" href="/">Jeremy</a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="/work">Work</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero wrap">
+    <h1 class="hero__title">I make software prove it works.</h1>
+
+    <div class="hero__grid">
+      <div class="hero__intro">
+        <p class="lede">I'm a QA leader for mobile apps. I design the systems that test them, including AI that drafts the tests while people decide what ships.</p>
+        <p class="hero__open">Open to Director of Quality Engineering, Senior QA Manager, and technical program roles.</p>
+        <div class="actions">
+          <a class="btn" href="/work">See my work</a>
+          <a class="btn btn--plain" href="/contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="run" data-run>
+        <div class="run__head">
+          <span class="run__title">Checks on my work</span>
+          <span class="run__sum" data-run-summary role="status">5 of 5 checks passed</span>
+        </div>
+        <ul class="run__list">
+          <li class="run__row" data-state="passed">
+            <span class="run__icon" aria-hidden="true"></span>
+            <span>
+              <span class="run__name">Designed an AI test-generation framework</span>
+              <span class="run__detail">Spark: AI drafts the tests, QA approves what ships.</span>
+            </span>
+            <span class="run__status">Passed</span>
+          </li>
+          <li class="run__row" data-state="passed">
+            <span class="run__icon" aria-hidden="true"></span>
+            <span>
+              <span class="run__name">Set one element-ID standard for React Native</span>
+              <span class="run__detail">Every element gets accessible, testID, and an accessibility ID, so Appium finds it the same way on iOS and Android.</span>
+            </span>
+            <span class="run__status">Passed</span>
+          </li>
+          <li class="run__row" data-state="passed">
+            <span class="run__icon" aria-hidden="true"></span>
+            <span>
+              <span class="run__name">Moved the team from manual card checks to nightly smoke suites</span>
+              <span class="run__detail">Coverage runs on a schedule instead of waiting on a person.</span>
+            </span>
+            <span class="run__status">Passed</span>
+          </li>
+          <li class="run__row" data-state="passed">
+            <span class="run__icon" aria-hidden="true"></span>
+            <span>
+              <span class="run__name">Planned a simulator vs real-device benchmark</span>
+              <span class="run__detail">A pilot to test whether nightly runs can leave real devices.</span>
+            </span>
+            <span class="run__status">Passed</span>
+          </li>
+          <li class="run__row" data-state="passed">
+            <span class="run__icon" aria-hidden="true"></span>
+            <span>
+              <span class="run__name">Wrote onboarding for AI testing agents</span>
+              <span class="run__detail">Playwright and IntelliJ Copilot agents, documented so engineers can adopt them.</span>
+            </span>
+            <span class="run__status">Passed</span>
+          </li>
+        </ul>
+        <div class="run__foot">
+          <button class="run__replay" type="button" data-run-replay>Run the checks again</button>
+        </div>
+        <div class="stamp" aria-hidden="true">Approved</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" aria-labelledby="selected-work">
+    <div class="section__head">
+      <h2 id="selected-work">Selected work</h2>
+      <a href="/work">All work</a>
+    </div>
+
+    <article class="work-row">
+      <h3 class="work-row__title"><a href="/work/spark">Spark: AI-assisted mobile test generation</a></h3>
+      <div class="work-row__body">
+        <p>A framework where AI drafts mobile tests and QA acts as the risk assessor and approval gate. Designed in full, then handed to engineering to build.</p>
+        <dl class="facts">
+          <dt>Stack</dt><dd>Appium, Java, TestNG, Bitrise, LambdaTest, GitHub Copilot</dd>
+          <dt>Status</dt><dd>Designed and handed off for implementation</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="work-row">
+      <h3 class="work-row__title"><a href="/work#react-native-ids">One element-ID standard for React Native</a></h3>
+      <div class="work-row__body">
+        <p>A single way to label every element so the same Appium locator works on iOS and Android.</p>
+        <dl class="facts">
+          <dt>Stack</dt><dd>React Native, Appium</dd>
+        </dl>
+      </div>
+    </article>
+
+    <article class="work-row">
+      <h3 class="work-row__title"><a href="/work#wreath-site">Pack 55 wreath fundraiser site</a></h3>
+      <div class="work-row__body">
+        <p>A fundraising site I designed and built with Claude, deployed on Vercel from GitHub.</p>
+        <dl class="facts">
+          <dt>Stack</dt><dd>HTML, CSS, JavaScript, Vercel</dd>
+        </dl>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap site-foot__row">
+    <p>Built by hand with Claude. Hosted on Vercel.</p>
+    <ul>
+      <li><a href="https://github.com/jbackattack">GitHub</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="/assets/app.js" defer></script>
+</body>
+</html>
