@@ -1,3 +1,4 @@
+[README (2).md](https://github.com/user-attachments/files/33845278/README.2.md)
 # Portfolio site
 
 Plain HTML, CSS, and a little JavaScript. No framework, no build step, matching the setup of the Pack 55 wreath site (static project on Vercel, deployed from GitHub `main`).
@@ -26,7 +27,7 @@ Every unfinished spot is wrapped in a yellow `class="todo"` highlight. List them
 sh scripts/check-todos.sh
 ```
 
-Still needed: last name for page titles, a photo at `assets/jeremy.jpg` (About page), email, LinkedIn, resume link, job dates and earlier roles, real testimonials, a public URL for the wreath site, and a check of the Spark step order.
+Still needed: last name for page titles, a photo at `assets/jeremy.jpg` (About page), email, LinkedIn, resume link, job dates and earlier roles, real testimonials, and a check of the Spark step order.
 
 ## Testimonials
 
