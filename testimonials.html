@@ -8,7 +8,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&amp;display=swap">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
 
 <header class="site-head">
   <div class="wrap bar">
-    <a class="brand" href="/">Jeremy</a>
+    <a class="brand" href="/">Jeremy<span class="brand__dot">.</span></a>
     <nav aria-label="Main">
       <ul class="nav">
         <li><a href="/work">Work</a></li>
@@ -34,28 +34,37 @@
     <p class="lede">What colleagues say about working with me.</p>
   </section>
 
-  <section class="section wrap" aria-label="Testimonials">
-    <!-- Replace each placeholder with a real quote the person has approved. -->
-    <figure class="quote">
-      <blockquote class="quote__text"><span class="todo">Paste a real quote from a manager, peer, or direct report.</span></blockquote>
-      <figcaption class="quote__by"><span class="todo">Name, title, company</span></figcaption>
-    </figure>
-
-    <figure class="quote">
-      <blockquote class="quote__text"><span class="todo">Paste a real quote here.</span></blockquote>
-      <figcaption class="quote__by"><span class="todo">Name, title, company</span></figcaption>
-    </figure>
-
-    <figure class="quote">
-      <blockquote class="quote__text"><span class="todo">Paste a real quote here.</span></blockquote>
-      <figcaption class="quote__by"><span class="todo">Name, title, company</span></figcaption>
-    </figure>
+  <section class="band" aria-label="Testimonials">
+    <div class="wrap quote-grid">
+      <!-- Replace each placeholder with a real quote the person has approved. -->
+      <figure class="quote-card">
+        <blockquote class="quote-card__text"><span class="todo">Paste a real, approved quote here.</span></blockquote>
+        <figcaption class="quote-card__who">
+          <span class="avatar" aria-hidden="true"></span>
+          <span><span class="todo">Name, title, company</span></span>
+        </figcaption>
+      </figure>
+      <figure class="quote-card">
+        <blockquote class="quote-card__text"><span class="todo">Paste a real, approved quote here.</span></blockquote>
+        <figcaption class="quote-card__who">
+          <span class="avatar" aria-hidden="true"></span>
+          <span><span class="todo">Name, title, company</span></span>
+        </figcaption>
+      </figure>
+      <figure class="quote-card">
+        <blockquote class="quote-card__text"><span class="todo">Paste a real, approved quote here.</span></blockquote>
+        <figcaption class="quote-card__who">
+          <span class="avatar" aria-hidden="true"></span>
+          <span><span class="todo">Name, title, company</span></span>
+        </figcaption>
+      </figure>
+    </div>
   </section>
 </main>
 
 <footer class="site-foot">
   <div class="wrap bar">
-    <a class="brand" href="/">Jeremy</a>
+    <a class="brand" href="/">Jeremy<span class="brand__dot">.</span></a>
     <nav aria-label="Footer">
       <ul class="nav">
         <li><a href="/work">Work</a></li>
@@ -66,7 +75,7 @@
       </ul>
     </nav>
   </div>
-  <div class="wrap"><p class="site-foot__note">Built by hand with Claude. Hosted on Vercel.</p></div>
+  <div class="wrap"><p class="site-foot__note">&copy; 2026 Jeremy. Built by hand with Claude. Hosted on Vercel.</p></div>
 </footer>
 </body>
 </html>

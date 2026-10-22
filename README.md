@@ -26,7 +26,11 @@ Every unfinished spot is wrapped in a yellow `class="todo"` highlight. List them
 sh scripts/check-todos.sh
 ```
 
-Still needed: last name for the header and page titles, email, LinkedIn, resume link, job dates and earlier roles, real testimonials, a public URL for the wreath site, and a check of the Spark step order.
+Still needed: last name for page titles, a photo at `assets/jeremy.jpg` (About page), email, LinkedIn, resume link, job dates and earlier roles, real testimonials, a public URL for the wreath site, and a check of the Spark step order.
+
+## Testimonials
+
+Quotes come from LinkedIn recommendations. Get each person's OK to publish their words, name, and title before pasting them into `testimonials.html` (the page has three placeholder cards).
 
 ## Deploy
 

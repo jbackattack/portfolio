@@ -8,7 +8,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&amp;display=swap">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
 
 <header class="site-head">
   <div class="wrap bar">
-    <a class="brand" href="/">Jeremy</a>
+    <a class="brand" href="/">Jeremy<span class="brand__dot">.</span></a>
     <nav aria-label="Main">
       <ul class="nav">
         <li><a href="/work">Work</a></li>
@@ -32,6 +32,10 @@
   <section class="hero wrap">
     <h1 class="page-title">I lead QA, and I build the tools.</h1>
     <p class="lede">I'm a QA manager at BuzzFeed and HuffPost. My team tests mobile apps on iOS and Android, and this year we've been moving from hand-checked releases to automated tests that AI helps write.</p>
+  </section>
+
+  <section class="wrap photo-wrap">
+    <div class="photo-slot"><span class="todo">Add a photo at assets/jeremy.jpg</span></div>
   </section>
 
   <section class="section wrap" aria-label="About me">
@@ -118,7 +122,7 @@
 
 <footer class="site-foot">
   <div class="wrap bar">
-    <a class="brand" href="/">Jeremy</a>
+    <a class="brand" href="/">Jeremy<span class="brand__dot">.</span></a>
     <nav aria-label="Footer">
       <ul class="nav">
         <li><a href="/work">Work</a></li>
@@ -129,7 +133,7 @@
       </ul>
     </nav>
   </div>
-  <div class="wrap"><p class="site-foot__note">Built by hand with Claude. Hosted on Vercel.</p></div>
+  <div class="wrap"><p class="site-foot__note">&copy; 2026 Jeremy. Built by hand with Claude. Hosted on Vercel.</p></div>
 </footer>
 </body>
 </html>
