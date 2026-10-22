@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wreath sale app case study | Jeremy</title>
+<meta name="description" content="An ordering and inventory app I designed and built for a scout pack's wreath fundraiser, and how a sale moves through it.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&amp;display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="brand" href="/">Jeremy<span class="brand__dot">.</span></a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li><a href="/work" aria-current="page">Work</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero wrap">
+    <h1 class="page-title">Pack 55 wreath sale app</h1>
+    <p class="lede">An ordering and inventory app for a scout pack's wreath fundraiser. Sellers take orders on a phone, and leaders see stock and sales as they happen.</p>
+    <dl class="facts">
+      <dt>Role</dt><dd>Designed and built it with Claude</dd>
+      <dt>Stack</dt><dd>React, JavaScript, Vercel, GitHub</dd>
+      <dt>Status</dt><dd>Deployed on Vercel, updated through GitHub</dd>
+    </dl>
+  </section>
+
+  <section class="section wrap" aria-labelledby="flow-title">
+    <div class="section__head">
+      <h2 id="flow-title">How a sale flows</h2>
+    </div>
+    <ol class="flow flow--six" data-flow>
+          <li class="flow__step" data-state="done">
+            <span class="flow__name">Pick a channel</span>
+            <p>Scouts sell door to door. Church tables run quick checkout or presale orders.</p>
+          </li>
+          <li class="flow__step" data-state="done">
+            <span class="flow__name">Build the order</span>
+            <p>Tap products to fill the cart. Sold-out items lock on their own.</p>
+          </li>
+          <li class="flow__step" data-state="done">
+            <span class="flow__name">Check stock</span>
+            <p>Bundles count their parts, so a wreath with a bow uses one wreath and one bow.</p>
+          </li>
+          <li class="flow__step" data-state="done">
+            <span class="flow__name">Take the details</span>
+            <p>Customer information and notes, then cash, Zelle, or check.</p>
+          </li>
+          <li class="flow__step" data-state="done">
+            <span class="flow__name">Confirm the sale</span>
+            <p>A receipt screen shows the order and the seller.</p>
+          </li>
+          <li class="flow__step" data-state="done">
+            <span class="flow__name">Track to handoff</span>
+            <p>Orders move from open to fulfilled, then picked up or delivered.</p>
+          </li>
+        </ol>
+    <p class="figcap">An animated overview. No customer information is shown. <button class="run__replay" type="button" data-flow-replay>Replay</button></p>
+
+    <div class="split">
+      <h2>What it is</h2>
+      <div class="prose">
+        <p>The pack sells wreaths, bows, and donations in three ways: scouts going door to door, a table sale at one church, and presale orders at another. Each way needs something slightly different, so the app changes what it asks for based on where the sale happens.</p>
+        <p>Presale orders collect customer details and sit behind a PIN. The quick-checkout table takes walk-up sales without that step.</p>
+      </div>
+    </div>
+
+    <div class="split">
+      <h2>What leaders see</h2>
+      <div class="prose">
+        <ul>
+          <li>Stock levels with warnings when an item runs low.</li>
+          <li>Printable order lists for each sales channel.</li>
+          <li>A spreadsheet export of all sales, plus backups.</li>
+          <li>Roster and access controls for sellers and church tables.</li>
+          <li>The ability to add orders by hand.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="split">
+      <h2>How it's built</h2>
+      <div class="prose">
+        <p>It's a single-page React app, bundled so no third-party scripts load. Orders are saved online so leaders can review and print them. I built it with Claude, and every change deploys from GitHub to Vercel.</p>
+        <p>I'm not linking the live site because it holds real customers' orders.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <p><a href="/work">Back to all work</a></p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap bar">
+    <a class="brand" href="/">Jeremy<span class="brand__dot">.</span></a>
+    <nav aria-label="Footer">
+      <ul class="nav">
+        <li><a href="/work">Work</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="https://github.com/jbackattack">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap"><p class="site-foot__note">&copy; 2026 Jeremy. Built by hand with Claude. Hosted on Vercel.</p></div>
+</footer>
+
+<script src="/assets/flow.js" defer></script>
+</body>
+</html>
