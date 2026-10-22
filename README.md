@@ -1,4 +1,4 @@
-[README (2).md](https://github.com/user-attachments/files/33845278/README.2.md)
+[README (3).md](https://github.com/user-attachments/files/33847915/README.3.md)
 # Portfolio site
 
 Plain HTML, CSS, and a little JavaScript. No framework, no build step, matching the setup of the Pack 55 wreath site (static project on Vercel, deployed from GitHub `main`).
@@ -6,7 +6,7 @@ Plain HTML, CSS, and a little JavaScript. No framework, no build step, matching 
 ## Structure
 
 - `index.html`: home, with the animated "checks on my work" hero
-- `work.html`, `work/spark.html`: project list and the Spark case study
+- `work.html`, `work/agents.html`: project list and the AI test agents case study (formerly Spark)
 - `about.html`, `testimonials.html`, `contact.html`, `404.html`
 - `assets/styles.css`, `assets/app.js`
 - `vercel.json`: clean URLs and security headers (including a Content Security Policy that allows Google Fonts)
@@ -17,7 +17,7 @@ Plain HTML, CSS, and a little JavaScript. No framework, no build step, matching 
 npx serve .
 ```
 
-`serve` reads `vercel.json`, so clean URLs like `/work` and `/work/spark` resolve the same way they do on Vercel.
+`serve` reads `vercel.json`, so clean URLs like `/work` and `/work/agents` resolve the same way they do on Vercel.
 
 ## Before publishing
 
