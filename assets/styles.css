@@ -487,6 +487,11 @@ h3 { font-size: 1.35rem; letter-spacing: -0.02em; line-height: 1.2; margin-botto
 .quote-card__text { margin: 0; font-size: 1.15rem; line-height: 1.65; }
 .quote-card__who { display: flex; align-items: center; gap: 0.9rem; margin-top: auto; font-size: 1rem; line-height: 1.4; }
 .avatar { flex: none; width: 2.75rem; height: 2.75rem; border-radius: 50%; background: var(--rule); }
+.avatar--initials { display: grid; place-items: center; font-size: 0.95rem; font-weight: 700; color: var(--muted); }
+img.avatar { object-fit: cover; }
+.quote-card--wide { grid-column: 1 / -1; }
+.quote-card--wide .quote-card__text p { margin: 0 0 1rem; }
+.quote-card--wide .quote-card__text p:last-child { margin-bottom: 0; }
 
 .contact-list {
   list-style: none;
