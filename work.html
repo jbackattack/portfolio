@@ -55,6 +55,7 @@
         <p>My team built three live QA agents on the infrastructure team's shared agent framework: a test case analyzer, a test case creator, and a mobile data lookup that queries BigQuery directly instead of waiting on dashboards. The analyzer reviews existing test repos against best practices, and on its first run it found security problems, including passwords stored in insecure places. The creator writes new tests to the same standard.</p>
         <p>They followed an automation prototype I designed, where AI drafts mobile tests and QA acts as the risk assessor and approval gate. It included a 13-file agent framework and a Jira epic with eight to nine child stories. It was first written up as a GitHub extension, but we decided to build on the infrastructure team's live agent setup instead, so the prototype never went to production.</p>
         <dl class="facts">
+          <dt>Impact</dt><dd>The analyzer found security problems in existing tests on its first run</dd>
           <dt>Role</dt><dd>Designed the automation prototype; my team built the live agents</dd>
           <dt>Stack</dt><dd>Appium, Java, TestNG, Bitrise, LambdaTest, GitHub Copilot</dd>
           <dt>Status</dt><dd>Three agents built and deployed; the prototype did not ship</dd>
@@ -111,8 +112,8 @@
         <p>The HuffPost app had limited QA coverage, and releases were often rolled back or paused over critical bugs. I built a QA process that combined manual and automated testing, plus a release process with full testing before every app store submission.</p>
         <p>The app's store rating rose from 2.20 to 3.75 in six months, and through 2023 no release had to be rolled back or paused.</p>
         <dl class="facts">
+          <dt>Impact</dt><dd>Store rating 2.20 to 3.75 in six months; no rolled-back or paused releases through 2023</dd>
           <dt>Role</dt><dd>Led QA and the release process</dd>
-          <dt>Result</dt><dd>Rating 2.20 to 3.75 in six months</dd>
         </dl>
       </div>
     </article>
@@ -132,9 +133,11 @@
       <h2 class="work-row__title">$134,000 saved on outside testing</h2>
       <div class="work-row__body">
         <p>I reviewed our outside testing contract every year against what it delivered. Usage was low, and what it found was mostly low-priority bugs. I ended the contract, which saved $134,000 with little loss in coverage.</p>
-        <p>To replace it, I moved both automated and manual device testing to a new vendor, so one platform covered both at a fraction of the price.</p>
+        <p>To replace it, I moved both automated and manual device testing to LambdaTest, a new vendor, so one platform covered both.</p>
         <dl class="facts">
+          <dt>Impact</dt><dd>$134,000 saved with little loss in test coverage</dd>
           <dt>Role</dt><dd>Fully evaluated the options, made the decision, and led the transition</dd>
+          <dt>Stack</dt><dd>LambdaTest, Bitrise</dd>
         </dl>
       </div>
     </article>
@@ -145,6 +148,7 @@
         <p>We had a monthly allotment of test builds and runs, and usage kept eating into it. I worked with engineering to trace why, and we found that more builds were being created per test than necessary. That inflated our usage against the budget without testing anything new.</p>
         <p>Once the extra builds were removed, we were able to pay for fewer builds each month, and our CI subscription no longer had to grow to cover them. That stopped a potential 20% annual increase.</p>
         <dl class="facts">
+          <dt>Impact</dt><dd>Stopped a potential 20% annual subscription increase</dd>
           <dt>Role</dt><dd>Found the cause with engineering; kept the subscription from growing</dd>
         </dl>
       </div>
@@ -156,6 +160,7 @@
         <p>Starting in 2018, I chose and negotiated with QA testing vendors, running proofs of concept before committing. Starting in mid-2022, I also handled invoicing and budget forecasts for the company's tech contractors, a group of up to 35 engineers across several countries.</p>
         <p>That included annual contractor reviews, staffing recommendations, and working with the vendors' finance teams to keep payments on track.</p>
         <dl class="facts">
+          <dt>Impact</dt><dd>Managed invoicing and budget forecasts for up to 35 contractors across several countries</dd>
           <dt>Role</dt><dd>Owned vendor selection, contracts, and contractor budget</dd>
         </dl>
       </div>
@@ -167,6 +172,7 @@
         <p>I started with two contract QA engineers and grew the team to as many as seven, working across New York, Ukraine, and Argentina. I led hiring initiatives, including five QA engineers hired through one recruiting partner.</p>
         <p>As the apps multiplied, I split the team in two and promoted team leads, which freed me to work on strategy and tooling. I also found team members with coding backgrounds and moved them into automation without letting manual testing coverage slip.</p>
         <dl class="facts">
+          <dt>Impact</dt><dd>Grew from 2 to as many as 7 QA engineers across 3 locations; hired 5 QA engineers</dd>
           <dt>Role</dt><dd>Hiring, structure, and day-to-day leadership</dd>
         </dl>
       </div>
@@ -178,6 +184,7 @@
         <p>Early on I replaced spreadsheets with TestRail for test cases and created release checklists, with product owners and engineering managers, covering the business-critical checks for every release. The checklists became the standard for all of the company's apps.</p>
         <p>For a third-party integration in a consumer app, I set up structured joint test sessions with the partner's engineers, who had no test plans of their own. We found more than 50 issues before launch.</p>
         <dl class="facts">
+          <dt>Impact</dt><dd>50+ issues found before a third-party launch; checklists adopted for every app</dd>
           <dt>Role</dt><dd>Process design and test lead</dd>
           <dt>Stack</dt><dd>TestRail, release checklists</dd>
         </dl>
