@@ -52,7 +52,7 @@
     <article class="work-row" id="spark">
       <h2 class="work-row__title"><a href="/work/agents">AI test agents, from the Spark prototype to live agents</a></h2>
       <div class="work-row__body">
-        <p>My team built three live QA agents on the infrastructure team's shared agent framework (UDF): a test case analyzer, a test case creator, and a mobile data lookup that queries BigQuery directly instead of waiting on dashboards. The analyzer reviews existing test repos against best practices, and on its first run it found security problems, including passwords stored in insecure places. The creator writes new tests to the same standard.</p>
+        <p>My team built three live QA agents on the infrastructure team's shared agent framework: a test case analyzer, a test case creator, and a mobile data lookup that queries BigQuery directly instead of waiting on dashboards. The analyzer reviews existing test repos against best practices, and on its first run it found security problems, including passwords stored in insecure places. The creator writes new tests to the same standard.</p>
         <p>They followed Spark, a prototype I designed where AI drafts mobile tests and QA acts as the risk assessor and approval gate. Spark included a 13-file agent framework and a Jira epic with eight to nine child stories. It never went to production, because the shared framework made a separate system unnecessary.</p>
         <dl class="facts">
           <dt>Role</dt><dd>Designed Spark; my team built the live agents</dd>
@@ -89,7 +89,7 @@
     <article class="work-row" id="agent-onboarding">
       <h2 class="work-row__title">Onboarding for AI testing agents</h2>
       <div class="work-row__body">
-        <p>I wrote the guides engineers use to adopt AI testing agents: a Test Quality Agent that runs in IntelliJ through GitHub Copilot Chat, and a Playwright end-to-end agent for BuzzFeed's rig UI services. I also compared the IntelliJ approach with a Bitrise step for the same job.</p>
+        <p>I wrote the guides engineers use to adopt AI testing agents: a Test Quality Agent that runs in IntelliJ through GitHub Copilot Chat, and a Playwright end-to-end agent for internal web services. I also compared the IntelliJ approach with a Bitrise step for the same job.</p>
         <dl class="facts">
           <dt>Role</dt><dd>Author of the onboarding documentation</dd>
           <dt>Stack</dt><dd>GitHub Copilot, IntelliJ, Playwright</dd>
@@ -108,7 +108,7 @@
     <article class="work-row" id="huffpost-turnaround">
       <h2 class="work-row__title">HuffPost app turnaround</h2>
       <div class="work-row__body">
-        <p>The HuffPost app had gone years without dedicated QA, and releases were often rolled back or paused over critical bugs. I built a QA process that combined manual and automated testing, plus a release process with full testing before every app store submission.</p>
+        <p>The HuffPost app had limited QA coverage, and releases were often rolled back or paused over critical bugs. I built a QA process that combined manual and automated testing, plus a release process with full testing before every app store submission.</p>
         <p>The app's store rating rose from 2.20 to 3.75 in six months, and through 2023 no release had to be rolled back or paused.</p>
         <dl class="facts">
           <dt>Role</dt><dd>Led QA and the release process</dd>
@@ -141,13 +141,12 @@
     </article>
 
     <article class="work-row" id="build-usage">
-      <h2 class="work-row__title">Cutting wasted builds and heading off a Bitrise price increase</h2>
+      <h2 class="work-row__title">Cutting wasted builds and heading off a vendor price increase</h2>
       <div class="work-row__body">
         <p>We had a monthly allotment of test builds and runs, and usage kept eating into it. I worked with engineering to trace why, and we found that more builds were being created per test than necessary. That inflated our usage against the budget without testing anything new.</p>
-        <p>Once the extra builds were removed, we were able to pay for fewer builds each month, and the subscription no longer had to grow to cover them. That stopped a potential 20% annual increase.</p>
+        <p>Once the extra builds were removed, we were able to pay for fewer builds each month, and our CI subscription no longer had to grow to cover them. That stopped a potential 20% annual increase.</p>
         <dl class="facts">
           <dt>Role</dt><dd>Found the cause with engineering; kept the subscription from growing</dd>
-          <dt>Stack</dt><dd>Bitrise</dd>
         </dl>
       </div>
     </article>
@@ -178,7 +177,7 @@
       <h2 class="work-row__title">Release checklists, test management, and a third-party integration</h2>
       <div class="work-row__body">
         <p>Early on I replaced spreadsheets with TestRail for test cases and created release checklists, with product owners and engineering managers, covering the business-critical checks for every release. The checklists became the standard for all of the company's apps.</p>
-        <p>For a third-party integration in the Tasty app, I set up structured joint test sessions with the partner's engineers, who had no test plans of their own. We found more than 50 issues before launch.</p>
+        <p>For a third-party integration in a consumer app, I set up structured joint test sessions with the partner's engineers, who had no test plans of their own. We found more than 50 issues before launch.</p>
         <dl class="facts">
           <dt>Role</dt><dd>Process design and test lead</dd>
           <dt>Stack</dt><dd>TestRail, release checklists</dd>
