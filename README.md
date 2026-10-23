@@ -1,14 +1,13 @@
-[README (3).md](https://github.com/user-attachments/files/33847915/README.3.md)
 # Portfolio site
 
 Plain HTML, CSS, and a little JavaScript. No framework, no build step, matching the setup of the Pack 55 wreath site (static project on Vercel, deployed from GitHub `main`).
 
 ## Structure
 
-- `index.html`: home, with the animated "checks on my work" hero
-- `work.html`, `work/agents.html`: project list and the AI test agents case study (formerly Spark)
+- `index.html`: home, with the animated "What I've delivered" panel
+- `work.html`, `work/agents.html`, `work/wreath.html`: project list (work and passion projects), the AI test agents case study (formerly Spark), and the wreath sale app case study
 - `about.html`, `testimonials.html`, `contact.html`, `404.html`
-- `assets/styles.css`, `assets/app.js`
+- `assets/styles.css`, `assets/app.js`, `assets/flow.js`, `assets/resume.pdf`
 - `vercel.json`: clean URLs and security headers (including a Content Security Policy that allows Google Fonts)
 
 ## Run locally
@@ -27,7 +26,7 @@ Every unfinished spot is wrapped in a yellow `class="todo"` highlight. List them
 sh scripts/check-todos.sh
 ```
 
-Still needed: last name for page titles, a photo at `assets/jeremy.jpg` (About page), email, LinkedIn, resume link, job dates and earlier roles, real testimonials, and a check of the Spark step order.
+Still needed: last name for page titles, a photo at `assets/jeremy.jpg` (About page), earlier roles with dates (ESPN, MLB Advanced Media), more passion projects, a short description of each AI agent, wreath sale results after the season, and approved testimonials with photos.
 
 ## Testimonials
 
