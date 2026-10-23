@@ -1,5 +1,5 @@
-// Replays the "What I've delivered" panel in the home page hero. Without JavaScript, or with
-// reduced motion, the panel stays in its finished, approved state.
+// Plays the "What I've delivered" panel on the home page when it scrolls into view. Without
+// JavaScript, or with reduced motion, the panel stays in its finished, approved state.
 (() => {
   const panel = document.querySelector("[data-run]");
   if (!panel) return;
@@ -60,9 +60,20 @@
     }
   });
 
-  if (reduceMotion.matches) {
+  if (reduceMotion.matches || !("IntersectionObserver" in window)) {
     showFinished();
-  } else {
-    play();
+    return;
   }
+
+  // Start the animation once, when at least half the panel scrolls into view.
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        observer.disconnect();
+        play();
+      }
+    },
+    { threshold: 0.5 }
+  );
+  observer.observe(panel);
 })();
