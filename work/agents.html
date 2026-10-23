@@ -47,10 +47,19 @@
         <ul>
           <li><strong>Test case analyzer.</strong> Reviews my team's existing test repos against best practices. On its first run it found security problems, including passwords stored in insecure places in the test code, so it paid off right away.</li>
           <li><strong>Test case creator.</strong> Writes new tests that follow those same best practices, so new work doesn't repeat old problems.</li>
-          <li><strong>Mobile data lookup.</strong> Looks up mobile app data for the team.</li>
+          <li><strong>Mobile data lookup.</strong> Answers questions about mobile app data by querying BigQuery directly, so nobody has to wait for a new dashboard.</li>
         </ul>
         <p>The analyzer sets the standard for the existing tests, and the creator builds new ones to meet it.</p>
-        <p><span class="todo">Add what the data lookup does, who uses the agents, and any results (time saved, tests produced). Confirm the security finding is OK to mention publicly.</span></p>
+        <p><span class="todo">Add who uses the agents and any results (time saved, tests produced). Confirm the security finding is OK to mention publicly.</span></p>
+      </div>
+    </div>
+
+    <div class="split">
+      <h2 id="data">Why a data lookup agent</h2>
+      <div class="prose">
+        <p>I used to rely on the data team to build Looker dashboards for the mobile data I needed. Those dashboards went stale, and they needed constant updating because I was always asking for different data.</p>
+        <p>So I set up the BigQuery command-line tool and built an agent on top of it. Now I can ask a question in plain language and the agent runs the query.</p>
+        <p>There was a bonus. Queries the data team ran for me sometimes uncovered bugs, because the data came back undefined when an out-of-date library wasn't sending it. Being able to ask more questions, more often, made it easier to catch problems like that.</p>
       </div>
     </div>
 
