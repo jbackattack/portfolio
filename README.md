@@ -5,7 +5,7 @@ Plain HTML, CSS, and a little JavaScript. No framework, no build step, matching 
 ## Structure
 
 - `index.html`: home, with the animated "What I've delivered" panel
-- `work.html`, `work/agents.html`, `work/wreath.html`: project list (work and passion projects), the AI test agents case study (formerly Spark), and the wreath sale app case study
+- `work.html`, `work/agents.html`, `work/wreath.html`: project list (work and passion projects), the AI test agents case study, and the wreath sale app case study
 - `about.html`, `testimonials.html`, `contact.html`, `404.html`
 - `assets/styles.css`, `assets/app.js`, `assets/flow.js`, `assets/resume.pdf`
 - `vercel.json`: clean URLs and security headers (including a Content Security Policy that allows Google Fonts)

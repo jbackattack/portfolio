@@ -49,15 +49,15 @@
     </div>
     <p class="section__note">At BuzzFeed and HuffPost I led QA and delivery, working with product and engineering teams.</p>
 
-    <article class="work-row" id="spark">
-      <h2 class="work-row__title"><a href="/work/agents">AI test agents, from the Spark prototype to live agents</a></h2>
+    <article class="work-row" id="ai-agents">
+      <h2 class="work-row__title"><a href="/work/agents">AI test agents, from an automation prototype to live agents</a></h2>
       <div class="work-row__body">
         <p>My team built three live QA agents on the infrastructure team's shared agent framework: a test case analyzer, a test case creator, and a mobile data lookup that queries BigQuery directly instead of waiting on dashboards. The analyzer reviews existing test repos against best practices, and on its first run it found security problems, including passwords stored in insecure places. The creator writes new tests to the same standard.</p>
-        <p>They followed Spark, a prototype I designed where AI drafts mobile tests and QA acts as the risk assessor and approval gate. Spark included a 13-file agent framework and a Jira epic with eight to nine child stories. It never went to production, because the shared framework made a separate system unnecessary.</p>
+        <p>They followed an automation prototype I designed, where AI drafts mobile tests and QA acts as the risk assessor and approval gate. It included a 13-file agent framework and a Jira epic with eight to nine child stories. It was first written up as a GitHub extension, but we decided to build on the infrastructure team's live agent setup instead, so the prototype never went to production.</p>
         <dl class="facts">
-          <dt>Role</dt><dd>Designed Spark; my team built the live agents</dd>
+          <dt>Role</dt><dd>Designed the automation prototype; my team built the live agents</dd>
           <dt>Stack</dt><dd>Appium, Java, TestNG, Bitrise, LambdaTest, GitHub Copilot</dd>
-          <dt>Status</dt><dd>Three agents built and deployed; Spark was a prototype</dd>
+          <dt>Status</dt><dd>Three agents built and deployed; the prototype did not ship</dd>
         </dl>
         <p><a href="/work/agents">Read the case study</a></p>
       </div>
