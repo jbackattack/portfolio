@@ -30,7 +30,7 @@ Still needed: last name for page titles, a photo at `assets/jeremy.jpg` (About p
 
 ## Testimonials
 
-Quotes come from LinkedIn recommendations. Get each person's OK to publish their words, name, and title before pasting them into `testimonials.html` (the page has three placeholder cards).
+Quotes come from LinkedIn recommendations. Get each person's OK to publish their words, name, and title before pasting them into `testimonials.html`.
 
 ## Deploy
 
