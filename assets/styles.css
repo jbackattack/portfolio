@@ -355,7 +355,10 @@ h3 { font-size: 1.35rem; letter-spacing: -0.02em; line-height: 1.2; margin-botto
   margin-bottom: 1.5rem;
 }
 .section__head h2 { margin-bottom: 0; }
-.section__note { margin: 0.5rem 0 0; color: var(--muted); max-width: 40rem; }
+.section__head:has(+ .section__note) { margin-bottom: 0.5rem; }
+.section__note { margin: 0 0 1.25rem; color: var(--muted); max-width: 40rem; }
+/* inner pages: pull the first section closer to the page title block */
+.hero:has(.page-title) + .section { padding-top: clamp(1.5rem, 4vw, 2.5rem); }
 
 .work-row {
   display: grid;
