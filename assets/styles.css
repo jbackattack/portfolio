@@ -621,3 +621,11 @@ img.avatar { object-fit: cover; }
 .shots img { width: 100%; height: auto; border: 1px solid var(--line, #d9d9d9); }
 .shots figcaption { font-size: 0.875rem; margin-top: 6px; opacity: 0.75; }
 @media (max-width: 640px) { .shots { grid-template-columns: 1fr; } }
+
+.resume__contact { margin: 1rem 0 0; color: var(--muted); }
+@media print {
+  .site-head, .site-foot, .skip, .no-print { display: none !important; }
+  body { background: #fff; }
+  .split { grid-template-columns: 1fr 4fr; gap: 1rem; padding-top: 1rem; }
+  .role { break-inside: avoid; }
+}
