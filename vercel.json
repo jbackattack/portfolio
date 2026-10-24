@@ -3,8 +3,8 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/work/spark", "destination": "/work/agents", "permanent": true },
-    { "source": "/testimonials", "destination": "/#testimonials", "permanent": true },
-    { "source": "/testimonials.html", "destination": "/#testimonials", "permanent": true }
+    { "source": "/testimonials", "destination": "/reviews", "permanent": true },
+    { "source": "/testimonials.html", "destination": "/reviews", "permanent": true }
   ],
   "headers": [
     {

@@ -6,7 +6,7 @@ Plain HTML, CSS, and a little JavaScript. No framework, no build step, matching 
 
 - `index.html`: home, with the animated "What I've delivered" panel
 - `work.html`, `work/agents.html`, `work/wreath.html`: project list (work and passion projects), the AI test agents case study, and the wreath sale app case study
-- `about.html`, `resume.html`, `contact.html`, `404.html` (testimonials live in a section of `index.html`)
+- `about.html`, `resume.html`, `contact.html`, `404.html` `reviews.html` (testimonials)
 - `assets/styles.css`, `assets/app.js`, `assets/flow.js`, `assets/resume.pdf`
 - `vercel.json`: clean URLs and security headers (including a Content Security Policy that allows Google Fonts)
 
@@ -30,7 +30,7 @@ Still needed: last name for page titles, a photo at `assets/jeremy.jpg` (About p
 
 ## Testimonials
 
-Quotes come from LinkedIn recommendations. Get each person's OK to publish their words, name, and title before pasting them into the testimonials section of `index.html`.
+Quotes come from LinkedIn recommendations. Get each person's OK to publish their words, name, and title before pasting them into `reviews.html`.
 
 ## Deploy
 
