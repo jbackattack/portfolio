@@ -612,3 +612,9 @@ img.avatar { object-fit: cover; }
 @media (prefers-reduced-motion: reduce) {
   .flow--six .flow__step { transition: none; }
 }
+
+.shots { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 16px 0; }
+.shots figure { margin: 0; }
+.shots img { width: 100%; height: auto; border: 1px solid var(--line, #d9d9d9); }
+.shots figcaption { font-size: 0.875rem; margin-top: 6px; opacity: 0.75; }
+@media (max-width: 640px) { .shots { grid-template-columns: 1fr; } }
