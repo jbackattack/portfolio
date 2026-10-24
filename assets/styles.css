@@ -629,3 +629,15 @@ img.avatar { object-fit: cover; }
   .split { grid-template-columns: 1fr 4fr; gap: 1rem; padding-top: 1rem; }
   .role { break-inside: avoid; }
 }
+
+/* Phones: keep brand and all nav links on one line */
+@media (max-width: 640px) {
+  .site-head .bar { flex-wrap: nowrap; gap: 0.5rem; padding-left: 14px; padding-right: 14px; }
+  .site-head .brand { font-size: 1.05rem; }
+  .site-head .nav { flex-wrap: nowrap; gap: 0.25rem clamp(0.4rem, 2.2vw, 1rem); }
+  .site-head .nav a { font-size: clamp(0.66rem, 3.1vw, 0.95rem); white-space: nowrap; }
+}
+/* Very narrow phones: allow wrapping rather than overflow */
+@media (max-width: 339px) {
+  .site-head .bar, .site-head .nav { flex-wrap: wrap; }
+}
