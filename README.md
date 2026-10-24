@@ -36,4 +36,4 @@ Quotes come from LinkedIn recommendations. Get each person's OK to publish their
 
 1. Create a GitHub repo and push this folder to `main`.
 2. In Vercel, import the repo under your personal account. Framework preset: Other. No build command, no output directory.
-3. Add a custom domain if you want one. Vercel's default `.vercel.app` URLs can sit behind Vercel login depending on the account's protection settings, which would block recruiters.
+3. Custom domain: `jeremy-back.com` is attached to the Vercel project (`www.jeremy-back.com` is the main address and the bare domain redirects to it). Share-preview tags use the `www` address.
