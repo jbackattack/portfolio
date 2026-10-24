@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&amp;display=swap">
-<link rel="stylesheet" href="/assets/styles.css?v=20261024b">
+<link rel="stylesheet" href="/assets/styles.css?v=20261024c">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -31,7 +31,6 @@
         <li><a href="/work">Work</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/resume">Resume</a></li>
-        <li><a href="/testimonials">Testimonials</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>
@@ -145,6 +144,56 @@
       </div>
     </article>
   </section>
+
+  <section class="band" id="testimonials" aria-labelledby="testimonials-title">
+    <div class="wrap">
+      <h2 id="testimonials-title">What colleagues say</h2>
+      <p class="section__note">Yes, I asked them nicely. I didn't write these. I swear.</p>
+    </div>
+    <div class="wrap quote-grid">
+      <figure class="quote-card quote-card--wide">
+        <blockquote class="quote-card__text">
+          <p>Jeremy is one of my favorite people because he is someone I trust to partner through the entire lifecycle of building a new product, or growing an existing one. He's creative, disciplined, thoughtful, and a fun collaborator.</p>
+          <div class="quote-card__rest" id="quote-rest-3">
+          <p>Back when we started the BuzzFeed News app, Jeremy was one of the core team members who helped us go from sketches on a whiteboard to an award-winning iOS and Android app, and a homegrown CMS to boot. He ensured we refined scope to minimize risk, he helped us execute our most complex features related to personalization, and he was a force building momentum each and every day.</p>
+          <p>He's also just good people and a good friend. Nuff said.</p>
+          </div>
+        </blockquote>
+        <figcaption class="quote-card__who">
+          <span class="avatar avatar--initials" aria-hidden="true">NC</span>
+          <span><strong>Noah Chestnut</strong><br>Senior Director of Product, The Athletic (The New York Times)</span>
+        </figcaption>
+      </figure>
+      <figure class="quote-card quote-card--wide">
+        <blockquote class="quote-card__text">
+          <p>I hired Jeremy at BuzzFeed in 2014. Years later, as VP of Engineering at Arccos Golf, I made him an offer to join me again. That's the most direct way I know to say how highly I think of him.</p>
+          <div class="quote-card__rest" id="quote-rest-1">
+          <p>When Jeremy joined, BuzzFeed had no mobile QA function. He built it from scratch: the process, the tooling, the team, and the culture around quality. He did it while our apps were scaling to millions of users. He didn't treat QA as a gate at the end of the process. He got into product and engineering conversations early, so problems were caught while they were still cheap to fix. Engineers trusted him because he was rigorous without being a bottleneck, and because he understood the tradeoffs behind a release, not just the bug count.</p>
+          <p>He also has unusually good operational and business instincts for a QA leader. It surprised no one who knew him that he went on to manage budgets, vendor contracts and a 40-person contractor program.</p>
+          <p>If you're building or rebuilding a quality org, hire Jeremy. I've tried to twice.</p>
+          </div>
+        </blockquote>
+        <figcaption class="quote-card__who">
+          <span class="avatar avatar--initials" aria-hidden="true">RJ</span>
+          <span><strong>Ryan Johnson</strong><br>VP of Engineering, Arccos Golf. Formerly at BuzzFeed.</span>
+        </figcaption>
+      </figure>
+      <figure class="quote-card quote-card--wide">
+        <blockquote class="quote-card__text">
+          <p>I worked with Jeremy at ESPN, where he was the lead QA on several projects I managed as product manager. He was a big part of why those releases went smoothly.</p>
+          <div class="quote-card__rest" id="quote-rest-2">
+          <p>Jeremy has good instincts and a strong eye for product quality. He understood the whole product, not just the test plan. He knew how the engineering worked, why design made the choices it did, and what we were measuring on the analytics side, and that made his feedback more useful than most. He was also a clear communicator, so issues got raised early and everyone knew where things stood. He was always looking for ways to automate testing and help the team move faster without cutting corners. It's no surprise to see he has kept building on that since.</p>
+          <p>I would recommend Jeremy to any team looking for a QA leader.</p>
+          </div>
+        </blockquote>
+        <figcaption class="quote-card__who">
+          <span class="avatar avatar--initials" aria-hidden="true">JB</span>
+          <span><strong>James Ballow</strong><br>Sports Technology Product Leader</span>
+        </figcaption>
+      </figure>
+      <!-- To add a testimonial: copy a quote-card--wide figure above, with the sender's permission. -->
+    </div>
+  </section>
 </main>
 
 <footer class="site-foot">
@@ -155,7 +204,6 @@
         <li><a href="/work">Work</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/resume">Resume</a></li>
-        <li><a href="/testimonials">Testimonials</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="https://github.com/jbackattack">GitHub</a></li>
       </ul>
@@ -165,5 +213,6 @@
 </footer>
 
 <script src="/assets/app.js" defer></script>
+<script src="/assets/testimonials.js" defer></script>
 </body>
 </html>
