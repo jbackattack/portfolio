@@ -432,6 +432,7 @@ h3 { font-size: 1.35rem; letter-spacing: -0.02em; line-height: 1.2; margin-botto
    About, testimonials, contact
    ------------------------------------------------------------ */
 .photo-wrap { padding-top: 0; }
+.headshot { display: block; width: 100%; max-width: 20rem; height: auto; border-radius: 10px; }
 .photo-slot {
   display: grid;
   place-items: center;
