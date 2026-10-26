@@ -118,7 +118,14 @@
       <h2>How it's built</h2>
       <div class="prose">
         <p>It's a single-page React app, bundled so no third-party scripts load. Orders are saved online so leaders can review and print them. I built it with Claude, and every change deploys from GitHub to Vercel.</p>
-        <p>It also has automated end-to-end tests in Playwright that I had Claude write, which run through the ordering flow the way a seller would. They run as a GitHub Action in a separate private repo that also holds a backup of the project, and they check stock rules and bundle counts so a change that breaks a sale gets caught early. <span class="todo">Add the number of tests, what they cover, and how often the Action runs (on every push, nightly, or both).</span></p>
+        <p>It also has 73 automated end-to-end tests in Playwright that I had Claude write. They run every morning as a GitHub Action in a separate private repo that also holds a backup of the project, on three phone setups: Android Chrome, iPhone Safari, and iPhone Chrome. That's 211 checks per run. The tests use a fake database, so no real sales or PINs are touched, and GitHub emails me if a run fails.</p>
+        <ul>
+          <li><strong>Selling and stock.</strong> Cash, Zelle, and check sales, donations, sold-out items, and a Wreath with Bow using one wreath plus one bow. Double-taps save once, a failed save keeps the cart, and one phone's sale never overwrites another's.</li>
+          <li><strong>Access.</strong> Correct and wrong PINs, first-login PIN changes, names not on the roster, and the door-to-door switch being turned off mid-sale.</li>
+          <li><strong>Leader tools.</strong> Totals, manual orders, stock edits, roster changes, pickups and undo, delete with restock, backups, and printing.</li>
+          <li><strong>Safety and layout.</strong> Customer names containing HTML show as text and never run, and no screen scrolls sideways on a phone.</li>
+        </ul>
+        <p>Some things still need a manual check on real phones before the sale, like the keyboard, the share sheet, and the text and email handoff from receipts.</p>
         <p>I'm not linking the live site because it holds real customers' orders.</p>
       </div>
     </div>
