@@ -43,7 +43,7 @@
     <p class="lede">An ordering and inventory app for a scout pack's wreath fundraiser. Sellers take orders on a phone, and leaders see stock and sales as they happen.</p>
     <dl class="facts">
       <dt>Role</dt><dd>The whole team: product, engineering, and QA, built with Claude</dd>
-      <dt>Stack</dt><dd>React, JavaScript, Vercel, GitHub</dd>
+      <dt>Stack</dt><dd>React, JavaScript, Playwright, Vercel, GitHub</dd>
       <dt>Status</dt><dd>Built and deployed, ready for this season's sale</dd>
     </dl>
   </section>
@@ -118,6 +118,7 @@
       <h2>How it's built</h2>
       <div class="prose">
         <p>It's a single-page React app, bundled so no third-party scripts load. Orders are saved online so leaders can review and print them. I built it with Claude, and every change deploys from GitHub to Vercel.</p>
+        <p>It also has automated end-to-end tests in Playwright that I had Claude write, which run through the ordering flow the way a seller would. They run as a GitHub Action in a separate private repo that also holds a backup of the project, and they check stock rules and bundle counts so a change that breaks a sale gets caught early. <span class="todo">Add the number of tests, what they cover, and how often the Action runs (on every push, nightly, or both).</span></p>
         <p>I'm not linking the live site because it holds real customers' orders.</p>
       </div>
     </div>
