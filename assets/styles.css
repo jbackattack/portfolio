@@ -623,7 +623,8 @@ img.avatar { object-fit: cover; box-shadow: 0 0 0 1px var(--rule); }
 .shots figcaption { font-size: 0.875rem; margin-top: 6px; opacity: 0.75; }
 @media (max-width: 640px) { .shots { grid-template-columns: 1fr; } }
 
-.resume__contact { margin: 1rem 0 0; color: var(--muted); }
+.resume__contact { display: none; margin: 1rem 0 0; color: var(--muted); } /* shown on the PDF/print only; the Contact page has it on screen */
+
 @media print {
   @page { size: Letter; margin: 0.5in 0.6in; }
   html { font-size: 10pt; }
@@ -632,7 +633,7 @@ img.avatar { object-fit: cover; box-shadow: 0 0 0 1px var(--rule); }
   .hero { padding: 0 0 0.4rem; }
   .page-title { font-size: 24pt; }
   .lede { font-size: 11pt; margin-top: 0.4rem; line-height: 1.4; max-width: none; }
-  .resume__contact { margin-top: 0.4rem; font-size: 9.5pt; }
+  .resume__contact { display: block; margin-top: 0.4rem; font-size: 9.5pt; }
   .section { padding-top: 0; }
   .split { grid-template-columns: 1.3in 1fr; gap: 0.5rem; padding: 0.55rem 0; border-top: 1px solid #ccc; }
   .split h2 { font-size: 11pt; letter-spacing: 0; }
