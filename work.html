@@ -52,12 +52,12 @@
     <article class="work-row" id="ai-agents">
       <h2 class="work-row__title"><a href="/work/agents">AI test agents, from an automation prototype to live agents</a></h2>
       <div class="work-row__body">
-        <p>My team built three live QA agents on the infrastructure team's shared agent framework: a test case analyzer, a test case creator, and a mobile data lookup that queries BigQuery directly instead of waiting on dashboards. The analyzer reviews existing test repos against best practices, and the creator writes new tests to the same standard.</p>
+        <p>My team built three live QA agents on the infrastructure team's shared agent framework: a test case analyzer, a test case creator, and a mobile data lookup agent that ran queries with the BigQuery command-line tool. I asked it questions in plain text in VS Code through the agent manager instead of waiting on dashboards. The analyzer reviewed existing test repos against best practices, and the creator wrote new tests to the same standard.</p>
         <p>They followed an automation prototype I designed, where AI drafts mobile tests and QA acts as the risk assessor and approval gate. It included a 13-file agent framework and a Jira epic with eight to nine child stories. It was first written up as a GitHub extension, but we decided to build on the infrastructure team's live agent setup instead, so the prototype never went to production.</p>
         <dl class="facts">
           <dt>Impact</dt><dd>On its first run, the analyzer found security problems in existing tests, including passwords stored in insecure places</dd>
           <dt>Role</dt><dd>Designed the automation prototype; my team built the live agents</dd>
-          <dt>Stack</dt><dd>Appium, Java, TestNG, Bitrise, LambdaTest, GitHub Copilot</dd>
+          <dt>Stack</dt><dd>Appium, Java, TestNG, Bitrise, LambdaTest, GitHub Copilot, BigQuery CLI</dd>
           <dt>Status</dt><dd>Three agents built and deployed; the prototype did not ship</dd>
         </dl>
         <p><a href="/work/agents">Read the case study</a></p>
@@ -67,7 +67,7 @@
     <article class="work-row" id="react-native-ids">
       <h2 class="work-row__title">One element-ID standard for React Native</h2>
       <div class="work-row__body">
-        <p>Mobile tests break when elements can't be found. I defined one rule for the React Native app: every element gets the accessible flag, a testID, and an accessibility ID. Tests locate elements with Appium's accessibility ID strategy. The same locator then works on iOS and Android.</p>
+        <p>Mobile tests break when elements can't be found. I defined one rule for the React Native app: every element got the accessible flag, a testID, and an accessibility ID. Tests located elements with Appium's accessibility ID strategy. The same locator then worked on iOS and Android.</p>
         <dl class="facts">
           <dt>Role</dt><dd>Defined the standard</dd>
           <dt>Stack</dt><dd>React Native, Appium, Java</dd>
@@ -90,7 +90,7 @@
     <article class="work-row" id="agent-onboarding">
       <h2 class="work-row__title">Onboarding for AI testing agents</h2>
       <div class="work-row__body">
-        <p>I wrote the guides engineers use to adopt AI testing agents: a Test Quality Agent that runs in IntelliJ through GitHub Copilot Chat, and a Playwright end-to-end agent for internal web services. I also compared the IntelliJ approach with a Bitrise step for the same job.</p>
+        <p>I wrote the guides engineers used to adopt AI testing agents: a Test Quality Agent that ran in IntelliJ through GitHub Copilot Chat, and a Playwright end-to-end agent for internal web services. I also compared the IntelliJ approach with a Bitrise step for the same job.</p>
         <dl class="facts">
           <dt>Role</dt><dd>Author of the onboarding documentation</dd>
           <dt>Stack</dt><dd>GitHub Copilot, IntelliJ, Playwright</dd>
@@ -120,10 +120,10 @@
       <h2 class="work-row__title">A new testing model for the whole tech organization</h2>
       <div class="work-row__body">
         <p>As the company's needs changed, I designed a different way to test across engineering. I split QA into two teams: a web team for ad revenue and content tools, and a mobile team focused on automation. Product engineers took on their own manual testing, using group testing sessions in place of team demos and the tools QA had used.</p>
-        <p>The shift was from quality assurance to quality assistance: QA sets up the tools and practices so teams can test well themselves.</p>
+        <p>The shift was from quality assurance to quality assistance: QA set up the tools and practices so teams could test well themselves.</p>
         <dl class="facts">
           <dt>Role</dt><dd>Designed the strategy and the team structure</dd>
-          <dt>Impact</dt><dd>Quality became a shared job across the whole tech organization: product engineers test their own work, and QA focuses on the tools, automation, and standards behind it</dd>
+          <dt>Impact</dt><dd>Quality became a shared job across the whole tech organization: product engineers tested their own work, and QA focused on the tools, automation, and standards behind it</dd>
         </dl>
       </div>
     </article>

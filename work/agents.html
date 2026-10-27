@@ -43,7 +43,7 @@
     <p class="lede">Three QA agents my team built on the company's shared agent framework, and the automation prototype that came first.</p>
     <dl class="facts">
       <dt>Role</dt><dd>Designed the automation prototype; my team built the live agents</dd>
-      <dt>Stack</dt><dd>Appium, Java, TestNG, Bitrise, LambdaTest, GitHub Copilot</dd>
+      <dt>Stack</dt><dd>Appium, Java, TestNG, Bitrise, LambdaTest, GitHub Copilot, BigQuery CLI</dd>
       <dt>Status</dt><dd>Three agents built and deployed; the prototype did not ship</dd>
     </dl>
   </section>
@@ -52,13 +52,13 @@
     <div class="split">
       <h2 id="live">What shipped</h2>
       <div class="prose">
-        <p>The infrastructure team built a shared agent framework, so everyone in tech makes agents the same way in one shared workspace. My team built three agents on it:</p>
+        <p>The infrastructure team built a shared agent framework, so everyone in tech made agents the same way in one shared workspace. My team built three agents on it:</p>
         <ul>
-          <li><strong>Test case analyzer.</strong> Reviews my team's existing test repos against best practices.</li>
-          <li><strong>Test case creator.</strong> Writes new tests from a pull request, following those same best practices, so new work doesn't repeat old problems. It saves my QA engineers hours, and often days, compared with building the same set of tests by hand.</li>
-          <li><strong>Mobile data lookup.</strong> Answers questions about mobile app data by querying BigQuery directly, so nobody has to wait for a new dashboard.</li>
+          <li><strong>Test case analyzer.</strong> Reviewed my team's existing test repos against best practices.</li>
+          <li><strong>Test case creator.</strong> Wrote new tests from a pull request, following those same best practices, so new work didn't repeat old problems. It saved my QA engineers hours, and often days, compared with building the same set of tests by hand.</li>
+          <li><strong>Mobile data lookup.</strong> Answered plain-text questions about mobile app data by running queries with the BigQuery command-line tool, so nobody had to wait for a new dashboard.</li>
         </ul>
-        <p>The analyzer sets the standard for the existing tests, and the creator builds new ones to meet it.</p>
+        <p>The analyzer set the standard for the existing tests, and the creator built new ones to meet it.</p>
         <div class="callout">
           <span class="callout__label">First run</span>
           <p>The analyzer found security problems right away, including passwords stored in insecure places in the test code.</p>
@@ -70,7 +70,7 @@
       <h2 id="data">Why a data lookup agent</h2>
       <div class="prose">
         <p>I used to rely on the data team to build Looker dashboards for the mobile data I needed. Those dashboards went stale, and they needed constant updating because I was always asking for different data.</p>
-        <p>So I set up the BigQuery command-line tool and built an agent on top of it. Now I can ask a question in plain language and the agent runs the query.</p>
+        <p>So I set up the BigQuery command-line tool and built an agent on top of it. From then on I could ask a question in plain text in VS Code, through the agent manager, and the agent ran the query.</p>
         <p>There was a bonus. Queries the data team ran for me sometimes uncovered bugs, because the data came back undefined when an out-of-date library wasn't sending it. Being able to ask more questions, more often, made it easier to catch problems like that.</p>
       </div>
     </div>
@@ -78,7 +78,7 @@
     <div class="split">
       <h2 id="why">Why the prototype didn't ship</h2>
       <div class="prose">
-        <p>The automation prototype was first written up as a GitHub extension, and it was designed while the shared framework was still being built. Once the infrastructure team's live agent setup existed, we decided to build on it instead of shipping a separate system, so the prototype never went to production. What carried over was the process, not the code: QA rates the risk, AI drafts the tests, and people approve them before anything ships. Only where the agent lives changed.</p>
+        <p>The automation prototype was first written up as a GitHub extension, and it was designed while the shared framework was still being built. Once the infrastructure team's live agent setup existed, we decided to build on it instead of shipping a separate system, so the prototype never went to production. What carried over was the process, not the code: QA rated the risk, AI drafted the tests, and people approved them before anything shipped. Only where the agent lived changed.</p>
       </div>
     </div>
   </section>
@@ -91,8 +91,8 @@
     <div class="split">
       <h2 id="problem">The problem</h2>
       <div class="prose">
-        <p>My team was checking mobile cards by hand. That doesn't keep up with an app on two platforms, so we moved toward nightly smoke suites and AI-generated tests.</p>
-        <p>AI can write a lot of tests quickly. The risk is a pile of tests nobody trusts. The prototype was built around one rule: a person with risk judgment decides what gets generated and what gets approved.</p>
+        <p>My team was checking mobile cards by hand. That didn't keep up with an app on two platforms, so we moved toward nightly smoke suites and AI-generated tests.</p>
+        <p>AI can write a lot of tests quickly. The risk was a pile of tests nobody trusted. The prototype was built around one rule: a person with risk judgment decided what got generated and what got approved.</p>
       </div>
     </div>
 
@@ -129,9 +129,9 @@
       <h2 id="decisions">Design decisions</h2>
       <div class="prose">
         <ul>
-          <li><strong>QA is the approval gate.</strong> AI proposes and QA decides, so the team trusts what runs.</li>
-          <li><strong>Generation limits follow risk.</strong> Effort goes where a failure would cost the most, instead of generating tests everywhere.</li>
-          <li><strong>A single delivery lane.</strong> One path from change to release keeps ownership clear.</li>
+          <li><strong>QA is the approval gate.</strong> AI proposed and QA decided, so the team trusted what ran.</li>
+          <li><strong>Generation limits follow risk.</strong> Effort went where a failure would cost the most, instead of generating tests everywhere.</li>
+          <li><strong>A single delivery lane.</strong> One path from change to release kept ownership clear.</li>
         </ul>
       </div>
     </div>
