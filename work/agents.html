@@ -107,27 +107,27 @@
       <div>
         <ol class="flow">
           <li class="flow__step">
-            <span class="flow__name">Trigger</span>
-            <p>One of three modes starts a run.</p>
+            <span class="flow__name">Receive a PR</span>
+            <p>QA picks up the pull request that needs test coverage.</p>
           </li>
           <li class="flow__step">
-            <span class="flow__name">Assess risk</span>
-            <p>QA rates how much a change could hurt.</p>
-          </li>
-          <li class="flow__step">
-            <span class="flow__name">Generate</span>
-            <p>AI drafts tests, with limits set by the risk.</p>
+            <span class="flow__name">Prompt the agent</span>
+            <p>QA asks the agent to assess the risk and generate tests, with limits set by the risk.</p>
           </li>
           <li class="flow__step flow__step--gate">
-            <span class="flow__name">Approve</span>
-            <p>QA approves the tests or sends them back.</p>
+            <span class="flow__name">Review</span>
+            <p>QA reviews the tests and approves them or sends them back.</p>
+          </li>
+          <li class="flow__step">
+            <span class="flow__name">Merge</span>
+            <p>Approved tests go into the test repo as a separate PR.</p>
           </li>
           <li class="flow__step">
             <span class="flow__name">Run</span>
             <p>Appium suites run on Bitrise against LambdaTest devices.</p>
           </li>
         </ol>
-        <p class="figcap">A simplified view of the framework. <span class="todo">Confirm the step order before publishing.</span></p>
+        <p class="figcap">A simplified view of the framework.</p>
       </div>
     </div>
 
