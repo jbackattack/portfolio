@@ -431,7 +431,7 @@ h3 { font-size: 1.35rem; letter-spacing: -0.02em; line-height: 1.2; margin-botto
 .flow__step p { margin: 0; font-size: 0.95rem; line-height: 1.5; }
 
 .callout-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
-.callout { border-left: 4px solid var(--blue); background: var(--panel); border-radius: 0 10px 10px 0; padding: 1rem 1.25rem; }
+.callout { margin-top: 1.5rem; border-left: 4px solid var(--blue); background: var(--panel); border-radius: 0 10px 10px 0; padding: 1rem 1.25rem; }
 .callout p { margin: 0.35rem 0 0; font-size: 1rem; line-height: 1.5; }
 .callout__label { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 @media (max-width: 640px) { .callout-row { grid-template-columns: 1fr; } }
@@ -667,3 +667,9 @@ img.avatar { object-fit: cover; box-shadow: 0 0 0 1px var(--rule); }
 @media (max-width: 319px) {
   .site-head .bar, .site-head .nav { flex-wrap: wrap; }
 }
+
+/* Agents case study: tighter rhythm between the two halves of the page */
+section[aria-labelledby="prototype"] { padding-top: clamp(1.5rem, 4vw, 2.5rem); }
+section[aria-labelledby="prototype"] .section__head { margin-bottom: 0.75rem; }
+.split .flow { margin-top: 0.4rem; }
+.split .figcap { margin-bottom: 0; }

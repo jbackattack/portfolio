@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&amp;display=swap">
-<link rel="stylesheet" href="/assets/styles.css?v=20261027b">
+<link rel="stylesheet" href="/assets/styles.css?v=20261027d">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -55,19 +55,13 @@
         <p>The infrastructure team built a shared agent framework, so everyone in tech makes agents the same way in one shared workspace. My team built three agents on it:</p>
         <ul>
           <li><strong>Test case analyzer.</strong> Reviews my team's existing test repos against best practices.</li>
-          <li><strong>Test case creator.</strong> Writes new tests from a pull request, following those same best practices, so new work doesn't repeat old problems.</li>
+          <li><strong>Test case creator.</strong> Writes new tests from a pull request, following those same best practices, so new work doesn't repeat old problems. It saves my QA engineers hours, and often days, compared with building the same set of tests by hand.</li>
           <li><strong>Mobile data lookup.</strong> Answers questions about mobile app data by querying BigQuery directly, so nobody has to wait for a new dashboard.</li>
         </ul>
         <p>The analyzer sets the standard for the existing tests, and the creator builds new ones to meet it.</p>
-        <div class="callout-row">
-          <div class="callout">
-            <span class="callout__label">First run</span>
-            <p>The analyzer found security problems right away, including passwords stored in insecure places in the test code.</p>
-          </div>
-          <div class="callout">
-            <span class="callout__label">In use</span>
-            <p>My QA engineers use the creator to write tests from a PR. It saves hours, and often days, compared with building the same set of tests by hand.</p>
-          </div>
+        <div class="callout">
+          <span class="callout__label">First run</span>
+          <p>The analyzer found security problems right away, including passwords stored in insecure places in the test code.</p>
         </div>
       </div>
     </div>
