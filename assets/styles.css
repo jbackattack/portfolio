@@ -393,6 +393,7 @@ h3 { font-size: 1.35rem; letter-spacing: -0.02em; line-height: 1.2; margin-botto
 }
 .facts dt { font-weight: 650; color: var(--muted); }
 .facts dd { margin: 0; }
+.facts + p { margin-top: 1.25rem; }
 
 /* ------------------------------------------------------------
    Case study flow
