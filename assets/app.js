@@ -65,7 +65,7 @@
     return;
   }
 
-  // Start the animation once, when at least half the panel scrolls into view.
+  // Start the animation once, when a fifth of the panel scrolls into view (the panel is taller than a phone screen).
   const observer = new IntersectionObserver(
     (entries) => {
       if (entries.some((entry) => entry.isIntersecting)) {
@@ -73,7 +73,7 @@
         play();
       }
     },
-    { threshold: 0.5 }
+    { threshold: 0.2 }
   );
   observer.observe(panel);
 })();
