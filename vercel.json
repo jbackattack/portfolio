@@ -17,7 +17,7 @@
         { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains" },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+          "value": "default-src 'self'; script-src 'self' 'sha256-kC8nVj8Hv+33fFEEE0IEd2Hsi4S+XfYxDZ0A0uSj2wM='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://vitals.vercel-insights.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
         }
       ]
     },
